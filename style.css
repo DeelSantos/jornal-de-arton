@@ -1,23 +1,28 @@
-.fundo {
-    background-color: #f7ebbec5;
+
+:root {
+    --cor-primario: #DBCBBD;
+    --cor-secundaria: #290001;
+    --cor-terciaria: #87431D;
+    --cor-alternativa1: #C87941;
+    --cor-alternativa2: #000000;
 }
 
 
-.cabecalho {
-    display: flex;
-    padding: 2%;
-    align-items: center;
-    gap: 30px;
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.cabecalho__texto {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bolder;
+body {
+    background-color: var(--cor-primario)
 }
 
-.cabecalho__titulo {
-    font-size: 36px;
-    font-weight: 400;
+hr {
+    width: 80%;
 }
 
+.head__title {
+    color: var(--cor-secundaria);
+}
