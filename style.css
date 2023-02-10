@@ -1,28 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=MedievalSharp&display=swap');
+
+
 
 :root {
-    --cor-primario: #DBCBBD;
+    --cor-primaria: #DBCBBD;
     --cor-secundaria: #290001;
     --cor-terciaria: #87431D;
-    --cor-alternativa1: #C87941;
-    --cor-alternativa2: #000000;
+    --cor-alternativa: #C87941;
+    --cor-atlternativa2: #000000;
+
+    --font-title: 'MedievalSharp', cursive;
+    --font-text: 'Charm', cursive;
 }
-
-
-
 
 * {
     margin: 0;
     padding: 0;
 }
 
+
+
 body {
-    background-color: var(--cor-primario)
+    background-color: var(--cor-primaria);
 }
 
-hr {
-    width: 80%;
+
+.head {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
 }
 
 .head__title {
+    font-size: 4rem;
+    font-family: var(--font-title);
     color: var(--cor-secundaria);
+}
+
+.head__text {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+}
+
+.head__navbar a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin: 0 1rem;
+}
+
+.head__navbar a:hover {
+    color: var(--cor-terciaria);
+    transition: 1s;
+}
+
+.container {
+    display: grid;
+    box-sizing: border-box;
+   
 }
